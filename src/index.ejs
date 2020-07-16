@@ -44,7 +44,8 @@
     {
       "imports": {
         "@edx/root-config": "//localhost:9000/edx-root-config.js",
-        "@edx/navbar": "//localhost:9001/edx-navbar.js"
+        "@edx/navbar": "//localhost:9001/edx-navbar.js",
+        "@edx/styleguide": "//localhost:9002/edx-styleguide.js"
       }
     }
   </script>
@@ -67,6 +68,7 @@
   </main>
   <script>
     System.import('@edx/root-config');
+    System.import('@edx/styleguide');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
