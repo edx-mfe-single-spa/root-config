@@ -45,7 +45,10 @@
       "imports": {
         "@edx/root-config": "//localhost:9000/edx-root-config.js",
         "@edx/navbar": "//localhost:9001/edx-navbar.js",
-        "@edx/styleguide": "//localhost:9002/edx-styleguide.js"
+        "@edx/styleguide": "//localhost:9002/edx-styleguide.js",
+        "@edx/enterprise-learner-portal": "//localhost:9003/edx-enterprise-learner-portal.js",
+        "@edx/course-learning": "//localhost:9004/edx-course-learning.js",
+        "@edx/user-profile": "//localhost:9005/edx-user-profile.js"
       }
     }
   </script>
@@ -64,7 +67,17 @@
   <% } %>
 </head>
 <body>
+  <!-- Navbar -->
   <div id="@edx/navbar"></div>
+
+  <!-- Enterprise -->
+  <div id="@edx/enterprise-learner-portal"></div>
+
+  <!-- Courseware -->
+  <div id="@edx/course-learning"></div>
+
+  <!-- Profile -->
+  <div id="@edx/user-profile"></div>
   <script>
     System.import('@edx/root-config');
     System.import('@edx/styleguide');
